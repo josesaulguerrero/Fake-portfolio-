@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio</title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="index.js" defer></script>
+   <link rel="shortcut icon" href="https://i.postimg.cc/Y0Njys51/kitty.png"/>
+</head>
+<body>
+
+   <header id="header" class="header"> 
+      <section class="logo">
+         <img src="https://i.postimg.cc/Y0Njys51/kitty.png" alt="a logo">
+         <span class="owner-name">Cat power!</span>
+      </section>
+      <div class="burger-icon" onclick="toggleClass()">
+         <div class="line1"></div>
+         <div class="line2"></div>
+         <div class="line3"></div>
+      </div>
+      <nav class="navbar navbar--hidden" id="navbar">
+         <ul class="options-container">
+            <li><a href="#welcome-section" class="nav-link">About me</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact me</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main id="main" class="main">
+
+      <section class="welcome-section" id="welcome-section">
+         <section class="titles">
+            <h1 class="main-title">Hello! I am Jose</h1>
+            <h5 class="subtitle">A Front-end developer</h5>
+         </section>
+         <figure class="image-container">
+            <img src="https://i.postimg.cc/c1D5jLc5/enso.png" alt="a random image">
+         </figure>
+         <!-- <section class="image"></section> -->
+      </section>
+
+      <section class="projetcs" id="projects">
+         <h2 class="section-title">My projects :D</h2>
+         <article class="project-tile">
+            <section class="card-header">
+               <img src="https://i.postimg.cc/J0vhdWnY/image-2-1.png" alt="project image">
+            </section>
+            <section class="card-content">
+               <a target="_blank" href="https://github.com/josesaulguerrero/tribute-page">
+                  <h3 class="project-name"><span>&lt;</span> Tribute page <span>&#92;&gt;</span></h3>
+               </a>
+            </section>
+         </article>
+
+         <article class="project-tile">
+            <section class="card-header">
+               <img src="https://i.postimg.cc/NF9sXP46/image-3-1.png" alt="project image">
+            </section>
+            <section class="card-content">
+               <a target="_blank" href="https://github.com/josesaulguerrero/landing-page">
+                  <h3 class="project-name"><span>&lt;</span> Landing page <span>&#92;&gt;</span></h3>
+               </a>
+            </section>
+         </article>
+
+         <article class="project-tile">
+            <section class="card-header">
+               <img src="https://i.postimg.cc/zvKfMcgJ/image-4-1.png" alt="project image">
+            </section>
+            <section class="card-content">
+               <a target="_blank" href="https://github.com/josesaulguerrero/Js-documentation">
+                  <h3 class="project-name"><span>&lt;</span> JS basic documentation <span>&#92;&gt;</span></h3>
+               </a>
+            </section>
+         </article>
+
+         <article class="project-tile">
+            <section class="card-header">
+               <img src="https://i.postimg.cc/ZqBV18Vf/image-1-1.png" alt="project image">
+            </section>
+            <section class="card-content">
+               <!-- <h3 class="project-name"><span>&lt;</span> Survey form <span>&#92;&gt;</span></h3> -->
+               <a target="_blank" href="https://github.com/josesaulguerrero/survery-form">
+                  <h3 class="project-name"><span>&lt;</span> Survey form <span>&#92;&gt;</span></h3>
+               </a>
+            </section>
+         </article>
+
+         <article class="project-tile">
+            <section class="card-header">
+               <img src="https://i.postimg.cc/Z5KTFRVY/image-5-1.png" alt="project image">
+            </section>
+            <section class="card-content">
+               <a target="_blank" href="https://github.com/josesaulguerrero/brand-store">
+                  <h3 class="project-name"><span>&lt;</span> Brand - buy kittens <span>&#92;&gt;</span></h3>
+               </a>
+            </section>
+         </article>
+      </section>
+
+      <section id="contact" class="contact">
+         <h2 class="section-title">Let's be a team!</h2>
+         <h5 class="subtitle">Keep the &lt;main&gt; thing the &lt;main&gt; thing</h5>
+         <section class="form-container">
+            <form action="adfas">
+               <label for="name">Your name: </label>
+               <input type="text" id="name" class="input--name" placeholder="Enter your name" required>
+               <label for="message">Your name: </label>
+               <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+               <!-- <textarea type="text" id="" class="input--name" placeholder="Enter your name" required> -->
+            </form>
+         </section>
+         <section class="social-media">
+            <ul class="list-container">
+               <li><a href="#" class="social-link" target="_blank" id="profile-link"><img src="https://i.postimg.cc/cCjTXTnM/github.png" alt="github logo"></a></li>
+               <li><a href="#" class="social-link"><img src="https://i.postimg.cc/fLHhT4Gz/facebook.png" alt="facebook logo"></a></li>
+               <li><a href="#" class="social-link"><img src="https://i.postimg.cc/QC4NPK8q/twitter.png" alt="twitter logo"></a></li>
+               <li><a href="#" class="social-link"><img src="https://i.postimg.cc/d3xvnM6H/instagram.png" alt="instagram logo"></a></li>
+            </ul>
+         </section>
+      </section>
+
+      <section class="design">
+         <p>Designed by Jose Saul Guerrero</p>
+      </section>
+
+   </main>
+
+</body>
+</html>
