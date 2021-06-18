@@ -4,7 +4,7 @@
 :root {
    --main-font-family: 'Montserrat', sans-serif;
    --titles-font-family: 'Caveat', sans-serif;
-   --nav-bar-background: #fb3640c5;
+   --nav-bar-background: #fb3640e7;
    --nav-bar-color: white;
    --burger-menu-bc: #FDCA40;
    --burger-menu-color: rgb(82, 64, 6);
@@ -64,6 +64,7 @@ img {
    background-color: var(--nav-bar-background);
    color: var(--nav-bar-color);
    padding: 0 20px;
+   position: fixed;
 }
 
 .logo {
@@ -457,4 +458,11 @@ a h3:hover {
    .nav-link {
       color: var(--nav-bar-color);
    }
+
+   .welcome-section {
+      min-height: 600px;
+      max-height: 100vh;
+      padding-top: 90px;
+   }
+
 }
