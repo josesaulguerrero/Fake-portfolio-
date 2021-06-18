@@ -9,7 +9,7 @@
    --burger-menu-bc: #FDCA40;
    --burger-menu-color: rgb(82, 64, 6);
    --bc: #1b042c;
-   --bc1: #a799b7b6;
+   --bc1: rgba(185, 185, 240, 0.685);
    --max-width: 1300px;
 }
 
@@ -28,12 +28,16 @@ body {
    font-family: var(--main-font-family);
    font-size: 1.8rem;
    overflow-x: hidden;
-   /* background-image: url(''); */
+   background-image: url('https://i.postimg.cc/HLKqkn16/shapelined-JBKdviwe-XI-unsplash.jpg');
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
    /* background-color: rgba(188, 210, 238, 0.5); */
+}
+
+.overlay{
+   background-color: var(--bc1);
 }
 
 h1, h2, h3, h4, h5, h6, .owner-name {
@@ -311,6 +315,10 @@ a h3:hover {
 
 /* form styles start here */
 
+.contact {
+   /* background-color: var(--bc1); */
+}
+
 .form-container {
    display: flex;
    flex-direction: column;
@@ -363,7 +371,7 @@ a h3:hover {
    max-width: 450px;
    align-items: center;
    justify-content: center;
-   margin: 0 auto 30px;
+   margin: 0 auto 0px;
 }
 
 .list-container {
@@ -402,9 +410,10 @@ a h3:hover {
 
 .design {
    width: 100%;
-   max-width: var(--max-width);
+   /* max-width: var(--max-width); */
    padding: 30px 10px;
    margin: 0 auto;
+   background-color: var(--burger-menu-bc);
    /* margin-bottom: 20px; */
 }
 
