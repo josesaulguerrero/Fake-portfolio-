@@ -4,9 +4,11 @@
 :root {
    --main-font-family: 'Montserrat', sans-serif;
    --titles-font-family: 'Caveat', sans-serif;
-   --nav-bar-background: #FB3640;
+   --nav-bar-background: #fb3640c5;
    --nav-bar-color: white;
-   --bc: #542E71;
+   --burger-menu-bc: #FDCA40;
+   --burger-menu-color: rgb(82, 64, 6);
+   --bc: #1b042c;
    --bc1: #a799b7b6;
    --max-width: 1300px;
 }
@@ -132,7 +134,7 @@ img {
    position: fixed;
    left: 0;
    top: 0;
-   background-color: #FDCA40;
+   background-color: var(--burger-menu-bc);
    visibility: visible;
    opacity: 1;
    transition: all .2s ease;
@@ -166,7 +168,7 @@ img {
    display: flex;
    justify-content: center;
    font-size: 3rem;
-   color: rgb(82, 64, 6);
+   color: var(--burger-menu-color);
    text-align: center;
 }
 
@@ -246,16 +248,58 @@ img {
    height: 100%;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   grid-auto-rows: 310px;
+   grid-auto-rows: 270px;
    gap: 20px 25px;
    padding: 30px 10px;
    margin: 0 auto;
 }
 
 .project-tile {
-   background-color: var(--bc1);
+   display: flex;
+   flex-direction: column;
+   background-color: var(--burger-menu-bc);
    border-radius: 10px;
-   /* box-shadow: 0 10px 10px var(--bc); */
+   box-shadow: 0 5px 15px rgba(165, 162, 162, 0.767);
+}
+
+.card-header {
+   width: 100%;
+   height: 60%;
+}
+
+.card-header img {
+   width: 100%;
+   object-fit: cover;
+}
+
+.card-content {
+   width: 100%;
+   height: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-content h3 {
+   color: var(--burger-menu-color);
+   font-size: 3rem;
+   text-align: center;
+   transition: all .3s;
+}
+
+a h3:hover {
+   text-decoration: underline;
+}
+
+.card-content span {
+   opacity: 0;
+   visibility: visible;
+   transition: all .3s;
+}
+
+.card-content a:hover span {
+   opacity: 1;
+   visibility: visible;
 }
 
 /* projects styles end here */
@@ -282,7 +326,7 @@ img {
    margin: 30px auto 40px;
    padding: 25px 10px;
    border-radius: 20px;
-   background-color: var(--bc1);
+   background-color: var(--nav-bar-background);
 }
 
 .input--name, .input--message {
